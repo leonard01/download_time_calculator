@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Download Time Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Download Size Input -->
+      <h2>Download Size (MB)</h2>
+      <input 
+        type="number" 
+        id="download-size" 
+        placeholder="Enter file size in MB"
+      />
+
+      <!-- Download Speed Input -->
+      <h2>Download Speed (MB/s)</h2>
+      <input 
+        type="number" 
+        id="download-speed" 
+        placeholder="Enter download speed in MB/s"
+      />
+
+      <!-- Where we'll display the result -->
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
