@@ -3,30 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <title>Download Time Calculator</title>
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- Download Size Input -->
-      <h2>Download Size (MB)</h2>
-      <input 
-        type="number" 
-        id="download-size" 
-        placeholder="Enter file size in MB"
-      />
+      <h1>Download Time Calculator</h1>
+      
+      <!-- DOWNLOAD SIZE -->
+      <div class="section">
+        <h2>File Size</h2>
+        <div class="input-group">
+          <input
+            type="number"
+            id="download-size"
+            placeholder="Enter file size"
+          />
+          <select id="size-unit">
+            <option value="KB">KB</option>
+            <option value="Kb">Kb</option>
+            <option value="MB" selected>MB</option>
+            <option value="Mb">Mb</option>
+            <option value="GB">GB</option>
+            <option value="Gb">Gb</option>
+            <option value="TB">TB</option>
+            <option value="Tb">Tb</option>
+          </select>
+        </div>
+      </div>
 
-      <!-- Download Speed Input -->
-      <h2>Download Speed (MB/s)</h2>
-      <input 
-        type="number" 
-        id="download-speed" 
-        placeholder="Enter download speed in MB/s"
-      />
+      <!-- DOWNLOAD SPEED -->
+      <div class="section">
+        <h2>Download Speed</h2>
+        <div class="input-group">
+          <input
+            type="number"
+            id="download-speed"
+            placeholder="Enter download speed"
+          />
+          <select id="speed-unit">
+            <option value="KB/s">KB/s</option>
+            <option value="Kb/s">Kb/s</option>
+            <option value="MB/s" selected>MB/s</option>
+            <option value="Mb/s">Mb/s</option>
+            <option value="GB/s">GB/s</option>
+            <option value="Gb/s">Gb/s</option>
+            <option value="TB/s">TB/s</option>
+            <option value="Tb/s">Tb/s</option>
+          </select>
+        </div>
+      </div>
 
-      <!-- Where we'll display the result -->
+      <!-- RESULT -->
       <div id="result" class="result"></div>
     </div>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
